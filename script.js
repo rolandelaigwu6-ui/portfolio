@@ -45,6 +45,12 @@ navigation?.querySelectorAll('a').forEach((link) => link.addEventListener('click
 }));
 
 const assetBase = '/assets/images/';
+// Netlify serves clean URLs such as `/about` even when a visitor opens
+// `/about/`. Normalising the route keeps the page-specific visuals working
+// in both the Go server and the deployed static site.
+const currentRoute = window.location.pathname === '/'
+  ? '/'
+  : `${window.location.pathname.replace(/\/+$/, '')}/`;
 const pageImages = {
   '/': 'img2.jpeg',
   '/about/': 'img2.jpeg',
@@ -56,7 +62,7 @@ const pageImages = {
   '/contacts/': 'img22.jpeg',
 };
 
-const imageURL = pageImages[window.location.pathname];
+const imageURL = pageImages[currentRoute];
 if (imageURL) {
   const hero = document.querySelector('.hero');
   const routePhoto = document.querySelector('.route-photo');
@@ -118,7 +124,7 @@ const routeGalleries = {
   },
 };
 
-const gallery = routeGalleries[window.location.pathname];
+const gallery = routeGalleries[currentRoute];
 if (gallery && !document.querySelector('.route-gallery')) {
   const figures = gallery.images.map(([image, caption], index) => `
     <figure>
