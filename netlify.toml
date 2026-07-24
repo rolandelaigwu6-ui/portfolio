@@ -1,0 +1,47 @@
+[build]
+  publish = "."
+
+[[redirects]]
+  from = "/about/"
+  to = "/about.html"
+  status = 200
+
+[[redirects]]
+  from = "/politics/"
+  to = "/politics.html"
+  status = 200
+
+[[redirects]]
+  from = "/business/"
+  to = "/business.html"
+  status = 200
+
+[[redirects]]
+  from = "/philanthropy/"
+  to = "/philanthropy.html"
+  status = 200
+
+[[redirects]]
+  from = "/impact/"
+  to = "/impact.html"
+  status = 200
+
+[[redirects]]
+  from = "/news/"
+  to = "/news.html"
+  status = 200
+
+[[redirects]]
+  from = "/events/"
+  to = "/events.html"
+  status = 200
+
+[[redirects]]
+  from = "/contacts/"
+  to = "/contacts.html"
+  status = 200
+
+[[redirects]]
+  from = "/video-gallery/"
+  to = "/video-gallery.html"
+  status = 200
