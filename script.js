@@ -43,12 +43,12 @@ const assetBase = '/assets/images/';
 const pageImages = {
   '/': 'img2.jpeg',
   '/about/': 'img2.jpeg',
-  '/politics/': 'img1.jpeg',
-  '/philanthropy/': 'img.jpeg',
-  '/impact/': 'img3.jpeg',
-  '/news/': 'img1.jpeg',
-  '/events/': 'img2.jpeg',
-  '/contacts/': 'img3.jpeg',
+  '/politics/': 'img5.jpeg',
+  '/philanthropy/': 'img10.jpeg',
+  '/impact/': 'img13.jpeg',
+  '/news/': 'img16.jpeg',
+  '/events/': 'img19.jpeg',
+  '/contacts/': 'img22.jpeg',
 };
 
 const imageURL = pageImages[window.location.pathname];
